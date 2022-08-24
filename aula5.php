@@ -10,6 +10,6 @@ function exibir(){
 
 exibir();
 
-echo "</br> alor da variável fora da função ".$nome;
+echo "</br> Valor da variável fora da função ".$nome;
 
 ?>
