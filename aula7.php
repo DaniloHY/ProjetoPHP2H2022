@@ -2,7 +2,7 @@
 
 $operador = 4;
 $num1 = 10;
-$num2 = 20;
+$num2 = 0;
 $result = 0;
 $operacao = " ";
 
@@ -20,12 +20,13 @@ switch ($operador) {
 	break;
 	
 	case '4' :$result = divValor($num1 , $num2);
-	$operacao = "Dividindo";
+	$operacao = "Divisão";
 	break;
 	
 	default: echo "Saindo";
 	break;
 }
+
 echo "O resultado da ". $operacao. " é ". $result;
 
 function somaValor($num1 , $num2){
@@ -41,6 +42,12 @@ function multiValor($num1 , $num2){
 }
 
 function divValor($num1 , $num2){
-	return ($num1 / $num2);
+	if ($num2 ==0){
+		echo "Inexistente";
+	}
+	else{
+		return ($num1 / $num2);
+	}
+	
 }
 ?>
