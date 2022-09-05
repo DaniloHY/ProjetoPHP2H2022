@@ -1,6 +1,6 @@
 <?php 
 
-$sala = 2000;
+$sala = 4000;
 $inss = 0;
 $ir = 0;
 $op = 3;
@@ -18,6 +18,9 @@ elseif ($sala <= 2427.35) {
  	$inss = $sala * 0.12;
  }
  elseif ($sala <= 7087.22) {
+ 	$inss = $sala * 0.14;
+ }
+ else {
  	$inss = $sala * 0.14;
  }
 
