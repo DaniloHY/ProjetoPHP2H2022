@@ -1,7 +1,7 @@
 <?php 
 
 $nome = 'Maria';
-$sexo = 2;
+$sexo = 1;
 $idade = 3;
 
 if ($sexo == 1 && $idade < 25) {

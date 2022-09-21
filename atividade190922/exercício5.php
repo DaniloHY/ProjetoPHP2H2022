@@ -3,7 +3,7 @@
 	$pessoas = 0;
 	$idade = 10;
 	$idade2 = 5;
-	$idade3 = 6;
+	$idade3 = 7;
 	$idade4 = 10;
 	$sexo = 1;
 	$sexo2 =2; 
