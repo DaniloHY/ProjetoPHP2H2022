@@ -15,16 +15,16 @@
 	</div>
 </div>
 <div class="form-group">
-  <label class="col-md-2 control-label" for="Nome">CPF <h11>*</h11></label>  
+  <label class="col-md-2 control-label" for="Nome">CPF <h11>*</h11></label>  <br>
   <div class="col-md-2">
-  <input id="cpf" name="cpf" placeholder="Apenas números" class="form-control input-md" required="" type="text" maxlength="11" pattern="[0-9]+$">
+  <input id="cpf" name="cpf" placeholder="Apenas números" class="form-control input-md" required="" type="text" maxlength="11" pattern="[0-9]+$"> <br>
   </div>
-  <label class="col-md-1 control-label" for="prependedtext">Telefone</label>
+  <label class="col-md-1 control-label" for="prependedtext">Telefone</label> <br>
      <div class="col-md-2">
     <div class="input-group">
       <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
       <input id="prependedtext" name="prependedtext" class="form-control" placeholder="XX XXXXX-XXXX" type="text" maxlength="13"  pattern="\[0-9]{2}\ [0-9]{4,6}-[0-9]{3,4}$"
-      OnKeyPress="formatar('## #####-####', this)">
+      OnKeyPress="formatar('## #####-####', this)"> <br>
     </div>
   </div>
  </div> 
