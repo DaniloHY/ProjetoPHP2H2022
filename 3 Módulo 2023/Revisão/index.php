@@ -22,3 +22,26 @@
 
 </body>
 </html>
+<?php 
+
+	$con = mysqli_connect("localhost", "root", "");
+
+	if (mysqli_connect_errno()) {
+		echo "Erro ao conectar com a base de dados: ".
+
+		mysqli_connect_error();
+	}else{
+
+		$sql = "CREATE DATABASE funcionarios";
+
+			if (mysqli_query($con, $sql)) {
+					echo "SUcesso";
+					
+			}else {
+				echo "</br>Erro: ".mysqli_error($con);
+			}
+
+	}
+
+?>
+$sql1 = "CREATE TABLE Dados(nome CHAR(30),email CHAR(30), cpf CHAR(14), telefone CHAR(13))";
