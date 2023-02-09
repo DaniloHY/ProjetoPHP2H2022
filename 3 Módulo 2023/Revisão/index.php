@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<title>Cadastro Funcionário</title>
 </head>
-<body style="background-color: #808080	;">
+<body style="background-color: #C0C0C0;">
 	 <div class="panel-heading">Gerenciar Funcionários</div> <br>
 	<div class="form-group">
 		<label class="col-md-2 control-label" for="Nome">Nome <h11>*</h11></label>
@@ -40,10 +40,10 @@
  <div class="form-group">
   <label class="col-md-2 control-label" for="Cadastrar"></label>
   <div class="col-md-8">
-    <button id="Cadastrar" name="Cadastrar" class="btn btn-primary" type="Submit">Cadastrar</button>
-    <button id="Cadastrar" name="Cadastrar" class="btn btn-warning" type="Submit">Alterar</button>
-    <button id="Cadastrar" name="Cadastrar" class="btn btn-danger" type="Submit">Excluir</button>
-    <button id="Cadastrar" name="Cadastrar" class="btn btn-info" type="Submit">Pesquisar</button>
+    <button id="Cadastrar" name="Cadastrar" class="btn btn-success" type="Submit">Cadastrar</button>
+    <button id="Cadastrar" name="Cadastrar" class="btn btn-secondary" type="Submit">Alterar</button>
+    <button id="Cadastrar" name="Cadastrar" class="btn btn-light" type="Submit">Excluir</button>
+    <button id="Cadastrar" name="Cadastrar" class="btn btn-dark" type="Submit">Pesquisar</button>
     <button id="Cancelar" name="Cancelar" class="btn btn-danger" type="Reset">Cancelar</button>
   </div>
 </div>
