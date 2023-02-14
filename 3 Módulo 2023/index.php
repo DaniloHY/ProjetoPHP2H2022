@@ -1,88 +1,56 @@
-<?php 
-
-	include_once 'php_action/conexao_bd.php';
-
-	//cabeçalho
-	include_once 'includes/header.php';
-
-	include_once 'includes/mensagem.php';
-?>
-
-	<div class="row">
-		<div class="col s12 m6 push-m3">
-			<h3 class="light">Clientes</h3>
-			<table class="striped">
-			<thead>
-				<tr>
-					<th>Nome</th>
-					<th>Sobrenome</th>
-					<th>E-mail</th>
-					<th>Idade</th>
-				</tr>				
-			</	>
-			
-			<tbody>
-				<?php 
-
-					$sql = "SELECT * FROM tbClientes";
-
-					$resultado = mysqli_query($connection, $sql);
-
-						
-					while($dados = mysqli_fetch_array($resultado)){
-
-					?>				
-			
-						<tr>
-							<td><?php echo $dados['nomeCli']; ?></td>
-							<td><?php echo $dados['sobreNomeCli']; ?></td>
-							<td><?php echo $dados['emailCli']; ?></td>
-							<td><?php echo $dados['idadeCli']; ?></td>
-
-							<td><a href="alterar.php?id=<?php echo $dados['codCli']; ?>" class="btn-floating orange"><i class="material-icons">edit</i></a></td>
-
-							<td><a href="#modal<?php echo $dados['codCli']; ?>" class="btn-floating red modal-trigger"><i class="material-icons">delete</i></a></td>
-
-							<!-- Modal Structure in Materializecss -->
-							  <div id="modal<?php echo $dados['codCli']; ?>" class="modal">
-							    <div class="modal-content">
-							      <h4>Aviso.</h4>
-							      <p>Deseja excluir o cliente?</p>
-							    </div>
-							    <div class="modal-footer">
-							      
-
-							      <form action="php_action/excluir_cliente.php" method="POST">
-							      	<input type="hidden" name="codCli" value="<?php echo $dados['codCli']; ?>">
-
-							      	<button type="submit" name="btn-excluir" class="btn red">Excluir</button>
-
-							      	<a href="#!" class="modal-close waves-effect waves-green btn">Cancelar</a>
-
-							      </form>
-							    </div>
-							  </div>
-
-						</tr>
-						
-					<?php }
-
-					?>
-					
-			</tbody>
-
-			</table>
-			<br>
-			<a href="cadastrar.php" class="btn">Adicionar Cliente</a>
-		</div>		
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<title>Cadastro Funcionário</title>
+</head>
+<body style="background-color: #DCDCDC;">
+	 <div class="panel-heading">Gerenciar Funcionários</div> <br>
+	<div class="form-group">
+		<label class="col-md-2 control-label" for="Nome">Nome <h11>*</h11></label>
+	<div class="col-md-8">
+		<input id="Nome" name="Nome" placeholder="" class="form-control input-md" required="" type="text">
 	</div>
+</div>
+<div class="form-group">
+  <label class="col-md-2 control-label" for="Nome">CPF <h11>*</h11></label>  <br>
+  <div class="col-md-2">
+  <input id="cpf" name="cpf" placeholder="Apenas números" class="form-control input-md" required="" type="text" maxlength="11" pattern="[0-9]+$"> <br>
+  </div>
+  <label class="col-md-1 control-label" for="prependedtext">Telefone</label> <br>
+     <div class="col-md-2">
+    <div class="input-group">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+      <input id="prependedtext" name="prependedtext" class="form-control" placeholder="xx xxxxx-xxxx" type="text" maxlength="13"  pattern="\[0-9]{2}\ [0-9]{4,6}-[0-9]{3,4}$"
+      OnKeyPress="formatar('## #####-####', this)"> <br>
+    </div>
+  </div>
+ </div> 
+ <div class="form-group">
+  <label class="col-md-2 control-label" for="prependedtext">Email <h11>*</h11></label>
+  <div class="col-md-5">
+    <div class="input-group">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+      <input id="prependedtext" name="prependedtext" class="form-control" placeholder="email@email.com" required="" type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" >
+    </div>
+  </div>
+</div>
+ <div class="form-group">
+  <label class="col-md-2 control-label" for="Cadastrar"></label>
+  <div class="col-md-8">
+    <button id="Cadastrar" name="Cadastrar" class="btn btn-outline-success" type="Submit">Cadastrar</button>
+    <button id="Cadastrar" name="Cadastrar" class="btn btn-outline-secondary" type="Submit">Alterar</button>
+    <button id="Cadastrar" name="Cadastrar" class="btn btn-outline-info" type="Submit">Excluir</button>
+    <button id="Cadastrar" name="Cadastrar" class="btn btn-outline-dark" type="Submit">Pesquisar</button>
+    <button id="Cancelar" name="Cancelar" class="btn btn-outline-danger" type="Reset">Cancelar</button>
+  </div>
+</div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
+</body>
+</html>
 
-<?php 
-	
-	//rodapé
-
-	include_once 'includes/footer.php';
-
-
- ?>
