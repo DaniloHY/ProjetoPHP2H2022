@@ -1,12 +1,3 @@
-<?php 
-
-  include_once 'php_action/conexao_bd.php';
-
-  //cabeçalho
-  include_once 'includes/header.php';
-
-  include_once 'includes/mensagem.php';
-?>
 <!DOCTYPE html>
 <html>
 <head>
