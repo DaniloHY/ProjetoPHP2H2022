@@ -23,7 +23,7 @@
      <div class="col-md-2">
     <div class="input-group">
       <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-      <input id="prependedtext" name="prependedtext" class="form-control" placeholder="XX XXXXX-XXXX" type="text" maxlength="13"  pattern="\[0-9]{2}\ [0-9]{4,6}-[0-9]{3,4}$"
+      <input id="prependedtext" name="prependedtext" class="form-control" placeholder="xx xxxxx-xxxx" type="text" maxlength="13"  pattern="\[0-9]{2}\ [0-9]{4,6}-[0-9]{3,4}$"
       OnKeyPress="formatar('## #####-####', this)"> <br>
     </div>
   </div>
@@ -53,17 +53,4 @@
 
 </body>
 </html>
-<?php 
 
-	$con = mysqli_connect("localhost", "root", "");
-
-	if (mysqli_connect_errno()) {
-		echo "Erro ao conectar com a base de dados: ".
-
-		mysqli_connect_error();
-	}else{
-
-		echo "Conexão Realizada";
-	}
-
-?>
