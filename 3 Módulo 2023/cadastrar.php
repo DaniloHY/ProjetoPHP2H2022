@@ -8,7 +8,7 @@
 			
 			<h3 class="light">Novo Funcionário</h3>
 			
-			<form action="acao_php/criar_funcionarios.php" method="POST">
+			<form action="acao_php/criar_funcionario.php" method="POST">
 				
 				<div class="input-field col s12">
 					<input type="text" name="nome" id="nome">
