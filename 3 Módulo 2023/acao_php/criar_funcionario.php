@@ -4,7 +4,7 @@
 
 	require_once 'conexao_bd.php';
 
-	if (isset($_POST['Cadastrar'])) {
+	if (isset($_POST['btn-cadastrar'])) {
 		
 		$nome = mysqli_escape_string($connection,$_POST['nome']);
 		$cpf = mysqli_escape_string($connection,$_POST['cpf']);
