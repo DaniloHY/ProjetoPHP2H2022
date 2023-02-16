@@ -1,7 +1,7 @@
 <?php 
-	include_once 'php_action/conexao_bd.php';
+	include_once 'acao_php/conexao_bd.php';
 	//cabeçalho
-	include_once 'includes/header.php';
+	include_once 'include/header.php';
 
 	if (isset($_GET['id'])) {
 
@@ -60,7 +60,7 @@
 	
 	//rodapé
 
-	include_once 'includes/footer.php';
+	include_once 'include/footer.php';
 
 
  ?>

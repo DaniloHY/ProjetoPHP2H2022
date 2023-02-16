@@ -1,7 +1,7 @@
 <?php 
 
 	$server  = 'localhost';
-	$user = 'admin';
+	$user = 'etecia';
 	$password = '123456';
 	$nome_db = 'dbFuncionarios';
 

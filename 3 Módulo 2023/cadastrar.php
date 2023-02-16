@@ -1,6 +1,6 @@
 <?php 
 	//cabeçalho
-	include_once 'includes/header.php';
+	include_once 'include/header.php';
 ?>
 
 <div class="row">
@@ -44,7 +44,7 @@
 	
 	//rodapé
 
-	include_once 'includes/footer.php';
+	include_once 'include/footer.php';
 
 
  ?>
