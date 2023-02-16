@@ -41,7 +41,7 @@
   <label class="col-md-2 control-label" for="Cadastrar"></label>
   <div class="col-md-8">
     <button id="Cadastrar" name="Cadastrar" class="btn btn-success" type="Submit">Cadastrar</button>
-    <button id="Cadastrar" name="Cadastrar" class="btn btn-secondary" type="Submit">Alterar</button>
+    <button id="Cadastrar" name="Alterar" class="btn btn-secondary" type="Submit">Alterar</button>
     <button id="Cadastrar" name="Cadastrar" class="btn btn-info" type="Submit">Excluir</button>
     <button id="Cadastrar" name="Cadastrar" class="btn btn-dark" type="Submit">Pesquisar</button>
     <button id="Cancelar" name="Cancelar" class="btn btn-danger" type="Reset">Cancelar</button>
