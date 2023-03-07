@@ -15,14 +15,14 @@
 	$carlos->Nascimento = '10/04/1976';
 	$carlos->Escolaridade = "Ensino Médio";
 
-	echo "Manipulando o objeto $carlos->Nome : \n";
-	echo "{$carlos->Nome} é formado em: {$carlos->Escolaridade} \n";
+	echo "Manipulando o objeto $carlos->Nome : <br>";
+	echo "{$carlos->Nome} é formado em: {$carlos->Escolaridade} <br>";
 
-	$carlos->Formar('Técnico em Eletrecidade');
-	echo "{$carlos->Nome} é formado em: {$carlos->Escolaridade} \n";
-	echo "{$carlos->Nome} possui {$carlos->Idade} anos \n";
+	$carlos->formar('Técnico em Eletrecidade');
+	echo "{$carlos->Nome} é formado em: {$carlos->Escolaridade} <br>";
+	echo "{$carlos->Nome} possui {$carlos->Idade} anos <br>";
 
-	$carlos->Envelhecer(1);
-	echo "{$carlos->Nome} possui {$carlos->Idade} anos \n";
+	$carlos->envelhecer(1);
+	echo "{$carlos->Nome} possui {$carlos->Idade} anos <br>";
 
 ?>
