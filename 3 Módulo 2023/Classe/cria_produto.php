@@ -2,12 +2,17 @@
 
 	include_once 'produto.php';
 
-	$valor = new Produto();
+	$produto1 = new Produto;
+	$produto2 = new Produto;
 
-	$valor->Codigo = 4011;
+	$produto1->Codigo = 4001;
+	$produto1->Descricao = 'CD - The Best of Eric Clapton';
 
-	$valor->Descricao = "CD The Best of Eric Clapton";
+	$produto2->Codigo = 4002;
+	$produto2->Descricao = "CD - The Eagles Hotel California";
 
-	echo $valor->Codigo. " - ". $valor->Descricao;
+	//Imprime informações de etiqueta
+	$produto1->ImprimeEtiqueta();
+	$produto2->ImprimeEtiqueta();
 
 ?>
