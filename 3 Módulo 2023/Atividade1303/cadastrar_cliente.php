@@ -12,6 +12,7 @@
 		$sexo = mysqli_escape_string($connection,$_POST['sexo']);
 		$usuário = mysqli_escape_string($connection,$_POST['usuario']);
 		$senha = mysqli_escape_string($connection,$_POST['senha']);
+		
 
 		$sql = "INSERT INTO Cliente(NomeCliente,SobrenomeCliente,EmailCliente,CPFCliente,SexoCLiente,UsuarioCliente,SenhaCliente)VALUES('$nome','$sobrenome','$email','$cpf','$sexo','$usuario','$senha')";
 

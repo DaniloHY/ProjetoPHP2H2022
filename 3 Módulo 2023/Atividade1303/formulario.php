@@ -13,15 +13,7 @@
 </head>
 <body>
 
-	<tr>
-		<td><?php echo $dados['NomeCliente']; ?></td>
-		<td><?php echo $dados['SobrenomeCliente']; ?></td>
-		<td><?php echo $dados['EmailCliente']; ?></td>
-		<td><?php echo $dados['CPFCliente']; ?></td>
-		<td><?php echo $dados['SexoCLiente']; ?></td>
-		<td><?php echo $dados['UsuarioCliente']; ?></td>
-		<td><?php echo $dados['SenhaCliente']; ?></td>
-	</tr>
+	
 
 	<form method="POST" action="bem_vindo.php">
 		<label>Nome:</label>
