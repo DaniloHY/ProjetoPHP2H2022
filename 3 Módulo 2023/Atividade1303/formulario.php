@@ -30,7 +30,7 @@
 		<input type="text" name="senha"> <br> <br>
 
 		<button name="Cadastrar">Cadastrar</button>
-		<button>Entrar</button>
+		
 	</form>
 </body>
 </html>
