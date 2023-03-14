@@ -1,7 +1,5 @@
 <?php 
 
-
-
 ?>
 
 <!DOCTYPE html>
@@ -13,7 +11,7 @@
 </head>
 <body>
 
-	
+
 
 	<form method="POST" action="bem_vindo.php">
 		<label>Nome:</label>
