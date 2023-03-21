@@ -45,7 +45,10 @@
 
 		//Método destrutor finaliza objeto
 
-		function
+		function __destruct(){
+			
+			echo "<br>Objeto {$this->nome} finalizado ... <br>";
+		}
 
 
 
