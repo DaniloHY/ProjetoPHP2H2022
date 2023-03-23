@@ -41,4 +41,7 @@
 
 	$conta_carlos->Depositar(20);
 	echo "O saldo atual é R/$ {$conta_carlos->obterSaldo()} <br>";
+
+	$conta_carlos->Retirar(10);
+	echo "O saldo atual é R/$ {$conta_carlos->obterSaldo()} <br>";
 ?>
