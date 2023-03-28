@@ -31,7 +31,7 @@
 
 		//Método construtor inicializa propriedades
 
-		function __construct($agencia, $codigo, $dataDeCriacao, $titular, $senha, $saldo)
+		function Conta__construct($agencia, $codigo, $dataDeCriacao, $titular, $senha, $saldo)
 		{
 			$this->agencia = $agencia;
 			$this->codigo = $codigo;
@@ -46,7 +46,7 @@
 
 		//Método destrutor finaliza objeto
 
-		function __destruct(){
+		function Conta__destruct(){
 			echo "<br>Objeto Conta {$this->codigo} de {$this->titular->nome} finalizada ... <br>";
 		}
 	}

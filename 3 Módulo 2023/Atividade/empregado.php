@@ -6,8 +6,8 @@
 		var $sobrenome;
 		var $cpf;
 	
-		function vencimento(){
-			
+		function salario(){
+
 		}
 
 
