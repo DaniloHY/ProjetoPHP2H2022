@@ -49,17 +49,6 @@
 			echo "<br>Objeto {$this->nome} finalizado ... <br>";
 		}
 
-
-
-
-
-
-
-
-
-
-
-
 	}
 
 ?>

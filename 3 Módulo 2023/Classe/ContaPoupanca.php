@@ -7,11 +7,11 @@ class ContaPoupanca extends Conta{
 		function __construct($agencia, $codigo, $dataDeCriacao, $titular, $senha, $saldo, $aniversario)
 		{
 			//Chamando o método construtor da classe-pai
-			parent:: __construct($agencia, $codigo, $dataDeCriacao, $titular, $senha, $saldo);
+			parent::__construct($agencia, $codigo, $dataDeCriacao, $titular, $senha, $saldo);
 			$this->aniversario = $aniversario;
 		}
 		//Método retirar (sobrescrito) verifica se há saldo para retirar tal $quantia
-		function Retirar($quantia){
+		function retirar($quantia){
 			if ($this->saldo  >= $quantia)  {
 				//Executa método da classe-pai
 					parent::retirar($quantia);
