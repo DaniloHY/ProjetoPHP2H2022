@@ -31,7 +31,7 @@
 
 		//Método construtor inicializa propriedades
 
-		function __construct($agencia, $codigo, $dataDeCriacao, $titular, $senha, $saldo, $cancelada)
+		function __construct($agencia, $codigo, $dataDeCriacao, $titular, $senha, $saldo)
 		{
 			$this->agencia = $agencia;
 			$this->codigo = $codigo;

@@ -31,7 +31,6 @@
 		}
 
 		//Método construtor inicializa propriedades
-		
 		function __construct($codigo, $nome, $altura, $idade, $nascimento, $escolaridade, $salario)
 		{
 			$this->codigo = $codigo;

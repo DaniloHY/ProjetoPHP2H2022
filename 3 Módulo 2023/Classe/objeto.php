@@ -8,12 +8,13 @@
 	#Criação do objeto Carlos
 
 	$carlos = new Pessoa;
-	$carlos->Codigo = 10;
-	$carlos->Nome = "Carlos da Silva";
-	$carlos->Altura = 1.85;
-	$carlos->Idade = 25;
-	$carlos->Nascimento = '10/04/1976';
-	$carlos->Escolaridade = "Ensino Médio";
+	$carlos->codigo = 10;
+	$carlos->nome = "Carlos da Silva";
+	$carlos->altura = 1.85;
+	$carlos->idade = 25;
+	$carlos->nascimento = '10/04/1976';
+	$carlos->escolaridade = "Ensino Médio";
+	$carlos->salario = 100.00;
 
 	echo "Manipulando o objeto $carlos->Nome : <br>";
 	echo "{$carlos->Nome} é formado em: {$carlos->Escolaridade} <br>";
@@ -32,7 +33,7 @@
 	$conta_carlos->DataDeCriacao = "10/07/02";
 	$conta_carlos->Titular = $carlos;
 	$conta_carlos->Senha = 9876;
-	$conta_carlos->Saldo = 567.89
+	$conta_carlos->Saldo = 567.89;
 	$conta_carlos->Cancelada = false;
 
 	echo "<br>";
