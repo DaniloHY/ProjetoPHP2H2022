@@ -7,8 +7,14 @@
 		var $cpf;
 	
 		function vencimento($salario){
-			
-			
+
+
+		}
+		//Método construtor inicializa propriedades
+		function Empregado__construct($nome, $sobrenome, $cpf){
+			$this->nome = $nome;
+			$this->sobrenome = $sobrenome;
+			$this->cpf = $cpf;
 		}
 
 

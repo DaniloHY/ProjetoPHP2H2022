@@ -27,5 +27,5 @@
 
 	#Criação do objeto assalariado
 	$assalariado = new Assalariado;
-	$assalariado->salario = 1321.00;
+	$assalariado->salario = 1320.00;
 ?>
