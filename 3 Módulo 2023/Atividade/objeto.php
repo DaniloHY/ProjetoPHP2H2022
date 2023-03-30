@@ -28,4 +28,10 @@
 	#Criação do objeto assalariado
 	$assalariado = new Assalariado;
 	$assalariado->salario = 1320.00;
+
+
+
+
+	$horista->vencimento();
+	echo "O recebido é R\$ {$horista->salariob} <br>";
 ?>

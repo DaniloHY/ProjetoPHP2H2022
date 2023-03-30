@@ -4,8 +4,11 @@
 
 		var $precoHora;
 		var $horasTrabalhadas;
+		var $salariob;
 
 		function vencimento(){
+
+			$salariob = ($precoHora * $horasTrabalhadas);
 				
 		}
 		//Método construtor inicializa propriedades

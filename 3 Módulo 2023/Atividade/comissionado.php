@@ -4,7 +4,7 @@
 		var $totalVenda;
 		var $taxaComissao;
 
-		function vencimento(){
+		function vencimento($recebido){
 			
 		}
 		//Método construtor inicializa propriedades

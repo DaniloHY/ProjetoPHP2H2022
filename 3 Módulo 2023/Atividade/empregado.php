@@ -2,11 +2,11 @@
 
 	class Empregado{
 
-		var $nome:
+		var $nome;
 		var $sobrenome;
 		var $cpf;
 	
-		function vencimento($salario){
+		function vencimento($recebido){
 
 
 		}
