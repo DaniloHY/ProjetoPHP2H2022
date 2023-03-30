@@ -4,7 +4,7 @@
 		var $totalVenda;
 		var $taxaComissao;
 
-		function salario(){
+		function vencimento(){
 			
 		}
 	}

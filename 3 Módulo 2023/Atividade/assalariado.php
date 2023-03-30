@@ -4,7 +4,7 @@
 
 		var $salario;
 
-		function salario(){
+		function vencimento(){
 
 		}
 	}

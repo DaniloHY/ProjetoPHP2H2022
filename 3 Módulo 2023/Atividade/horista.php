@@ -5,7 +5,7 @@
 		var $precoHora;
 		var $horasTrabalhadas;
 
-		function salario(){
+		function vencimento(){
 			
 		}
 	}
