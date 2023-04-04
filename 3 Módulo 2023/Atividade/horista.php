@@ -1,20 +1,22 @@
 <?php 
 
-	class Horista{
+	class Horista extends Empregado{
 
 		var $precoHora;
 		var $horasTrabalhadas;
-		var $salariob;
 
-		function vencimento(){
-
-			$salariob = ($precoHora * $horasTrabalhadas);
-				
-		}
-		//Método construtor inicializa propriedades
-		function Horista__construct($precoHora, $horasTrabalhadas){
+		//Método construtor (sobrescrito) agora, também inicializa a variável $precoHora $horasTrabalhadas
+		function __construct($nome, $sobrenome, $cpf, $precoHora, $horasTrabalhadas)
+		{
+		//Chamando o método construtor da classe mãe
+			parent::__construct($nome, $sobrenome, $cpf, $precoHora, $horasTrabalhadas);
 			$this->precoHora = $precoHora;
 			$this->horasTrabalhadas = $horasTrabalhadas;
+}
+		function vencimento(){
+
+			$salariob = $precoHora * $horasTrabalhadas;
+				
 		}
 	}
 

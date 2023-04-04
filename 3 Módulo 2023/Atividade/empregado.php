@@ -8,6 +8,8 @@
 	
 		function vencimento($recebido){
 
+			
+
 
 		}
 		//Método construtor inicializa propriedades
