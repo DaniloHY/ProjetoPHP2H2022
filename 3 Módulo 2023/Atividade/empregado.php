@@ -6,7 +6,15 @@
 		var $sobrenome;
 		var $cpf;
 	
-		function vencimento($recebido){
+		function vencimento($horista){
+
+		}
+
+		function vencimento($comissionado){
+			
+		}
+
+		function vencimento($assalariado){
 
 			
 
