@@ -13,10 +13,9 @@
 			$this->precoHora = $precoHora;
 			$this->horasTrabalhadas = $horasTrabalhadas;
 }
-		function vencimento(){
+		function vencimento($precoHora, $horasTrabalhadas){
 
-			$salariob = $precoHora * $horasTrabalhadas;
-				
+				return($precoHora * $horasTrabalhadas);
 		}
 	}
 
