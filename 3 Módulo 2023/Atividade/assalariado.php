@@ -2,7 +2,6 @@
 
 	class Assalariado extends Empregado{
 
-		var $salario;
 
 		//Método construtor (sobrescrito) agora, também inicializa a variável $salario
 		function __construct($nome, $sobrenome, $cpf, $salario)

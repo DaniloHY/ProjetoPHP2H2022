@@ -11,6 +11,7 @@
 	$empregado->Nome = "Roberto";
 	$empregado->Sobrenome = "Santana";
 	$empregado->CPF = 15978932938;
+	$empregado->salario = 1500;
 
 
 	#Criação do objeto horista
@@ -31,6 +32,7 @@
 
 
 
+	echo $salariol;
 
 	$horista->vencimento();
 	echo "O recebido é R\$ {$horista->salariob} <br>";

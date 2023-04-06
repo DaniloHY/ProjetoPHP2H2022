@@ -15,7 +15,7 @@
 }
 		function vencimento($precoHora, $horasTrabalhadas){
 
-				return($precoHora * $horasTrabalhadas);
+				$salariol = $precoHora * $horasTrabalhadas;
 		}
 	}
 
