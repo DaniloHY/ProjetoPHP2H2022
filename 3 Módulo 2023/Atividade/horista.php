@@ -6,7 +6,7 @@
 		var $horasTrabalhadas;
 
 		//Método construtor (sobrescrito) agora, também inicializa a variável $precoHora $horasTrabalhadas
-		function __construct($nome, $sobrenome, $cpf, $precoHora, $horasTrabalhadas)
+		function Empregado__construct($nome, $sobrenome, $cpf, $precoHora, $horasTrabalhadas)
 		{
 		//Chamando o método construtor da classe mãe
 			parent::__construct($nome, $sobrenome, $cpf, $precoHora, $horasTrabalhadas);

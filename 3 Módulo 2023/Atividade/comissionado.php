@@ -5,7 +5,7 @@
 		var $taxaComissao;
 
 		//Método construtor (sobrescrito) agora, também inicializa a variável $totalVenda e $taxaComissao
-		function __construct($nome, $sobrenome, $cpf, $totalVenda, $taxaComissao)
+		function Empregado__construct($nome, $sobrenome, $cpf, $totalVenda, $taxaComissao)
 		{
 		//Chamando o método construtor da classe mãe
 			parent::__construct($nome, $sobrenome, $cpf, $totalVenda, $taxaComissao);

@@ -13,7 +13,7 @@ include_once "empregado.php";
 			$this->totalVenda = $totalVenda;
 			$this->taxaComissao = $taxaComissao;
 		}
-		function Empregado_vencimento($salario){
+		function Empregado_somaValor($salario){
 		return $salario;
 		}
 

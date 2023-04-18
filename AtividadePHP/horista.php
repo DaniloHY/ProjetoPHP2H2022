@@ -14,7 +14,7 @@ include_once "empregado.php";
 			$this->precoHora = $precoHora;
 			$this->horasTrabalhadas = $horasTrabalhadas;
 }
-		function Empregado_vencimento($salario){
+		function Empregado_somaValor($salario){
 		return $salario;
 		}
 

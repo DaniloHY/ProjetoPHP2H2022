@@ -12,8 +12,8 @@ include_once "empregado.php";
 			parent::__construct($nome, $sobrenome, $cpf,$salario);
 			$this->salario = $salario;
 		}
-		function Empregado_vencimento($salario){
-			return $salario;
+		function Empregado_somaValor($salario){
+		return $salario;
 		}
 
 		//Método Destruidor
