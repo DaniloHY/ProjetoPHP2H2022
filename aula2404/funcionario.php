@@ -6,7 +6,7 @@
 		private $codigo;
 		public $nome;
 		private $nascimento;
-		private $salario;
+		protected $salario;
 
 		function setSalario($salario){
 			if (is_numeric($salario)&&($salario > 0)) {
