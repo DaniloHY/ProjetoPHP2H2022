@@ -1,13 +1,13 @@
 <?php 
 
 	class Biblioteca{
-		const Nome = "GTK"
+		const Nome = "GTK ";
 	}
 
 	class Aplicacao extends Biblioteca{
 		//declaração das constantes
 
-		const Ambiente = "Gnome Desktop";
+		const Ambiente = "Gnome Desktop ";
 		const Versao = "3.8";
 
 		function __construct($Nome){
