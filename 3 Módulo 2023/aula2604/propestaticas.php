@@ -16,6 +16,6 @@
 	new Aplicacao('Abiword');
 	new Aplicacao('Evolution');
 
-	echo '<br> Quantidade de Aplicações = '. Aplicacao::$Quantidade . "<br>";
+	echo "<br> Quantidade de Aplicações = ". Aplicacao::$Quantidade . "<br>";
 
 ?>
