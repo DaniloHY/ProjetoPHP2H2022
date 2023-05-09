@@ -7,11 +7,11 @@
 
 		#adiciona itens na cesta
 		function AdicionaItem(Produto $item){
-			$this->itens[] = $itens;
+			$this->itens[] = $item;
 		}
 
 		function ExibeLista (){
-			foreach ($this->$itens as $item) {
+			foreach ($this->itens as $item) {
 				$item->ImprimeEtiqueta();
 			}
 		}
