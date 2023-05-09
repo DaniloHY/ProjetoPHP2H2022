@@ -6,7 +6,7 @@
 		private $itens;
 
 		#adiciona itens na cesta
-		function AdicionaItem(Produto $item){
+		function Adicionaltem(Produto $item){
 			$this->itens[] = $item;
 		}
 
