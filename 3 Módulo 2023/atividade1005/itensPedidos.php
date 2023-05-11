@@ -17,7 +17,7 @@
 			$ValUnidade = 0;
 			foreach ($this->itens as $item){
 
-				$ValUnidade = $item->QtdeProduto * $item->ValProduto;
+			
 			}
 			return 'Total: R$ ' . $ValUnidade . '<br>'; 
 		}

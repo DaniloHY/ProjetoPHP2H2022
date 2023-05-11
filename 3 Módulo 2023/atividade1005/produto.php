@@ -8,6 +8,8 @@
 			function ImprimeEtiqueta()
 		{
 			print 'Descrição: ' . $this->DesPro . "<br>";
+			print 'Quantidade: ' . $this->QtdeProduto . "<br>";
+			print 'Valor: ' . $this->ValProduto . "<br>";
 		}
 	}
 
