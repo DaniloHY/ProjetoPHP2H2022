@@ -1,8 +1,8 @@
 <?php 
 
 	class ItensPedidos{
-		private $QtdeItem;
-		private $ValUnidade;
+		var $QtdeItem;
+		var $ValUnidade;
 		var $itens;
 
 		function Adicionaltem(Produto $item){

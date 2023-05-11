@@ -1,9 +1,9 @@
 <?php 
 
 	class Produto{
-		private $DesPro;
-		private $QtdeProduto;
-		private $ValProduto;
+		var $DesPro;
+		var $QtdeProduto;
+		var $ValProduto;
 	
 			function ImprimeEtiqueta()
 		{
